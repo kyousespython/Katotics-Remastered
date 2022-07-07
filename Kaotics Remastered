@@ -1,3 +1,9 @@
+
+-- Do not use this script, a blacklist will take place.
+-- If the Script is finished ill be thinking about releasing it.
+-- also do not recreate.
+
+
 local UIS = game:GetService("UserInputService")
 local player = game.Players.LocalPlayer
 local good = "You're Whitelisted"
