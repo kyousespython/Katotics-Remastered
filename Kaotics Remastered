@@ -6,8 +6,8 @@ local bad = "You're Blacklisted"
 -- Whitelist [Allowed]
 _G.whitelisted = {
     [1117039101] = "lronman662", 
-    [561230558] = "Username",
-    [111] = "Username"
+    [3131933294] = "Nat2020899",
+    [2739328842] = "gravekyo"
 }
 
 
@@ -311,7 +311,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Tobias020108Back/YBA-
 end)
 g:Seperator()
 g:Button("Pink GUI", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/zakater5/LuaRepo/main/YBA/MainGui.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ketamo/ybaa/main/yba"))()
 end)
 
 local h = Tab2:Channel("Admin Scripts")
