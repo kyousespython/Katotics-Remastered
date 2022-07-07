@@ -309,6 +309,10 @@ g:Seperator()
 g:Button("Xenon", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Tobias020108Back/YBA-AUT/main/YBA-GUI-Rewrite.lua"))() 
 end)
+g:Seperator()
+g:Button("Pink GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zakater5/LuaRepo/main/YBA/MainGui.lua"))()
+end)
 
 local h = Tab2:Channel("Admin Scripts")
 
@@ -344,8 +348,6 @@ h:Seperator()
 h:Button("Fates", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
 end)
-
-
 
 
 e:Seperator()
