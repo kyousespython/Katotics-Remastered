@@ -1,9 +1,3 @@
-
--- Do not use this script, a blacklist will take place.
--- If the Script is finished ill be thinking about releasing it.
--- also do not recreate.
-
-
 local UIS = game:GetService("UserInputService")
 local player = game.Players.LocalPlayer
 local good = "You're Whitelisted"
@@ -79,7 +73,7 @@ local a = Tab1:Channel("Player") -- Channel 0_0
 local sldr = a:Slider("Walk Speed", 16, 500, 0, function(t) -- A Slider
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
 end)
-
+a:Seperator() 
 local sldr = a:Slider("Jump Power", 50, 500, 0, function(t) -- A Slider
 game.Players.LocalPlayer.Character.Humanoid.JumpPower = t
 end)
@@ -95,28 +89,31 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/
 Fly(true) -- Change "true" To "false" to disable Fly
 end)
 
+b:Seperator() 
+
 b:Button("Anti Afk", function()
 game:service'Players'.LocalPlayer.Idled:connect(function()
 bb:CaptureController()bb:ClickButton2(Vector2.new())
 ab.Text="Roblox Tried to kick you but kyo didnt let them kick you :D"wait(2)ab.Text="Status : Active"end)
 end)
+b:Seperator()
 
 b:Button("Godmode", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/FwfNEqYz", true))()
 end)
-
+b:Seperator()
 b:Button("Godmode v2", function()
 end)
-
+b:Seperator()
 
 b:Button("Noclip", function()
     pcall(loadstring(game:HttpGet("https://pastebin.com/raw/kt3Nxzw1")))
 end)
-
+b:Seperator()
 b:Button("Chat Bypasser", function()
     loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
 end)
-
+b:Seperator()
 
 b:Button("Inf Jumps", function()
     local InfiniteJumpEnabled = true
@@ -126,15 +123,15 @@ game:GetService("UserInputService").JumpRequest:connect(function()
 	end
 end)
 end)
-
+b:Seperator()
 b:Button("TP Tool", function()
 pcall(loadstring(game:HttpGet("https://pastebin.com/raw/njMw0Bke")))
 end)
-
+b:Seperator()
 b:Toggle("ESP",false, function(bool)
 loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/WRD ESP.txt"))()
 end)
-
+b:Seperator()
 b:Toggle("Headless",false, function(bool)
         game.Players.LocalPlayer.Character.Head.Transparency = 1
 game.Players.LocalPlayer.Character.Head.Transparency = 1
@@ -144,7 +141,7 @@ v.Transparency = 1
 end
 end
 end)
-
+b:Seperator()
 b:Toggle("Korblox",false, function(bool)
 local ply = game.Players.LocalPlayer
 local chr = ply.Character
@@ -155,7 +152,7 @@ chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
 chr.RightFoot.MeshId = "902942089"
 chr.RightFoot.Transparency = "1"
 end)
-
+b:Seperator()
 local Tab2 = Win1:Server("Scripts", "") -- Server/Tab
 
 local c = Tab2:Channel("Dahood") -- Channel 0_0
@@ -163,41 +160,41 @@ local c = Tab2:Channel("Dahood") -- Channel 0_0
 c:Button("Kaotic Ware", "Opens Kaotic Ware script.", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/KaoticWare/main/V1.5'))()
 end)
-
+c:Seperator()
 c:Button("Raycode X", function()
 --Raycodex
 loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
 end)
-
+c:Seperator()
 c:Button("Enclosed Scripts (recommended)", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Pvpahh/enclosed/main/enclosed'))()
 end)
-  
+  c:Seperator()
   
 c:Button("Chariotsware", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Rippeed/kidsinmybasement/main/betacw"))()
 end)
-
+c:Seperator()
 c:Button("Destiny ", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/loader"))()
 end)
-
+c:Seperator()
 c:Button("Crash GUI", function(state)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/GS21Official/DH-TB-Crash/main/Swagmode%20crash%20modified%20(better%20FPS)%20crash'))()
 end)
-
+c:Seperator()
 c:Button("Dimag private", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Dimag16/DimagX_NEW/main/dimagx', true))()
 end)
-
+c:Seperator()
 c:Button("Impulse Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Impulseonyoutube/scripts/main/dahood"))()
 end)
-
+c:Seperator()
 c:Button("Space x", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/spacexrandom/Lua/main/DaHood", true))()
 end)
-
+c:Seperator()
 c:Button("faded", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()	
 end)
@@ -207,7 +204,7 @@ c:Seperator()
 c:Button("Destiny [STAND]", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/stand"))()
 end)
-
+c:Seperator()
 c:Button("The Mimic", function()
 --[[
 X - Go invis
@@ -217,7 +214,7 @@ Z - Play footsteps sound
 ]]
 loadstring(game:HttpGet("https://icxy.xyz/NovaGui/NovaMimic", true))()
 end)
-
+c:Seperator()
 
 c:Button("Stand Aura", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JOJOGIO/DH-GAMING/main/STAND%20AURA%20FRAMEWORK"))()
@@ -230,24 +227,24 @@ local d = Tab2:Channel("Hood Modded") -- Channel 0_0
 d:Button("Chariot Ware", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Rippeed/kidsinmybasement/main/betacw"))()
 end)
-
+d:Seperator()
 d:Button("Chariots Ware Remastered", function()
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Rippeed/DaHoodinary/main/chariotsware"))()
 end)
-
+d:Seperator()
 d:Button("Softvortex", function()
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/SoftVortex/305/main/2"),true))()
 end)
-
+d:Seperator()
 
 d:Button("Focus Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/scripts/main/HoodModdedFocus.lua", true))()
 end)
-
+d:Seperator()
 d:Button("Oblivion", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptOblivion/Oblivion/main/loader.lua"))()
 end)
-
+d:Seperator()
 local e = Tab2:Channel("Grand piece online") -- Channel 0_0
 
 
@@ -255,22 +252,23 @@ local e = Tab2:Channel("Grand piece online") -- Channel 0_0
 e:Button("Gpo GUI", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/Jakekill871/public-scripts/master/GrandPieceOnlineGUI'),true))()
 end)
-
+e:Seperator()
 e:Button("CFA Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CFA-HUB/CFA-HUB/main/cfahubfree.lua"))()
 end)
-
+e:Seperator()
 e:Button("Sea Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SEA-HUB/SEA-HUB/main/seahubfree.lua"))()
 end)
-
+e:Seperator()
 e:Button("more soon", function()
 print("soon")
 end)
-
+e:Seperator()
 
 local Tab3 = Win1:Server("Credits", "") -- Server/Tab
 
 local f = Tab3:Channel("Kaotics Loader") -- Channel 0_0
 
-f:Label("Developer : kyo#2222, kyo#6490.") -- A Label 
+f:Label("Developer : kyo#2222, kyo#6490.") -- A Label (Ofc)
+f:Seperator()
