@@ -69,6 +69,12 @@ local Tab1 = Win1:Server("Scripts", "") -- Server/Tab
 
 local a = Tab1:Channel("Dahood") -- Channel 0_0
 
+
+a:Button("Swagmode", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+end)
+
+a:Seperator()
 a:Button("Kaotic Ware", "Opens Kaotic Ware script.", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/KaoticWare/main/V1.5'))()
 end)
@@ -200,12 +206,29 @@ end)
 
 local d = Tab1:Channel("Blox Fruits")
 
+d:Button("Reskin Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/sasaff94/Reskin-Hub/main/README.md"))()
+end)
+d:Seperator()
+d:Button("Chiba Hub", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KindIhave/ChibaHuB/main/Chiba-BF.txt'))()
+end)
+
+d:Seperator()
+d:Button("RTN Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/WindowsXp12/rtnhub/main/bloxfruit.lua"))()
+end)
+
+d:Seperator()
 d:Button("ATR", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/ATR",true))()
 end)
 d:Seperator()
 
-
+d:Button("OP Beli Farm", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/chestfarm"))()
+end)
+d:Seperator()
 d:Button("Evo x Hub (recommended)", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/2"))()
 end)
@@ -227,13 +250,17 @@ end)
 
 local e = Tab1:Channel("Your Bizzare Adventure")
 
+e:Button("Bitch Boy v0.1", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/zakater5/LuaRepo/main/YBA/MainGui.lua"))()
+end)
+e:Seperator()
 e:Button("YBA Hub (very recommended)", function()
  loadstring(game:HttpGet("https://raw.githubusercontent.com/ketamo/ybaa/main/yba"))()
 end)
 e:Seperator()
 
-e:Button("Yba Sucks", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Tobias020108Back/YBA-AUT/main/YBA-GUI-Rewrite.lua"))() 
+e:Button("Yba Sucks ass", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tobias020108Back/YBA-AUT/main/YBA-GUI-Rewrite.lua"))()
 end)
 e:Seperator()
 e:Button("Xenon", function()
@@ -244,55 +271,93 @@ e:Button("Pink GUI", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/zakater5/LuaRepo/main/YBA/MainGui.lua"))()
 end)
 
-local f = Tab1:Channel("Admin Scripts")
+local f = Tab1:Channel("Anime Dimension")
 
-f:Button("Dex", function()
-    loadstring(game:GetObjects("rbxassetid://418957341")[1].Source)()
+f:Button("Sun Hub (Best)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Besty191/MAZI/main/Anime%20Dimensions%20Simulator%20%7C%20Sun%20Hub"))()
 end)
 f:Seperator()
-f:Button("Eclipse", function()
+
+f:Button("VG", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+f:Seperator()
+f:Button("Ghost", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ghost-home/public/main/AnimeGhost.lua', true))()
+end)
+
+f:Seperator()
+f:Button("KeyBrew Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/borntodiekuv/KeybrewHub/main/Dimension"))()
+end)
+
+f:Seperator()
+
+f:Button("Nex Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Real/NexHub/main/NexHubLoader"))()
+end)
+
+local g = Tab1:Channel("Mining Simulator 2")
+
+g:Button("Saza Hub", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-DonateMe-3327"))()SZInjected(SZLoader)()
+end)
+g:Seperator()
+g:Button("Blue GUI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XRoLLu/UWU/main/MS2_WHAT.lua"))()
+end)
+g:Seperator()
+g:Button("Ticket Farm", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/BisG0RYY'))()
+end)
+g:Seperator()
+local w = Tab1:Channel("Admin Scripts")
+
+w:Button("Dex", function()
+    loadstring(game:GetObjects("rbxassetid://418957341")[1].Source)()
+end)
+w:Seperator()
+w:Button("Eclipse", function()
     getgenv().mainKey = "nil"
  
 local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
 end)
-f:Seperator()
+w:Seperator()
 
-f:Button("Inf Yield", function()
+w:Button("Inf Yield", function()
  loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
-f:Seperator()
+w:Seperator()
 
-
-
-f:Button("Find POS (Click F9)", function()
+w:Button("Find POS (Click F9)", function()
     print(currentPOS)
 end)
-f:Seperator()
+w:Seperator()
 
 
-f:Button("Cmd X", function()
+w:Button("Cmd X", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))();
 end)
-f:Seperator()
+w:Seperator()
 
-f:Button("Fates", function()
+w:Button("Fates", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
 end)
 
 local Tab2 = Win1:Server("Player Settings", "") -- Server/Tab
 
-local g = Tab2:Channel("Player") -- Channel 0_0
+local x = Tab2:Channel("Player") -- Channel 0_0
 
 
-local sldr = g:Slider("Walk Speed", 16, 500, 0, function(t) -- A Slider
+local sldr = x:Slider("Walk Speed", 16, 500, 0, function(t) -- A Slider
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
 end)
-g:Seperator() 
-local sldr = g:Slider("Jump Power", 50, 500, 0, function(t) -- A Slider
+x:Seperator() 
+local sldr = x:Slider("Jump Power", 50, 500, 0, function(t) -- A Slider
 game.Players.LocalPlayer.Character.Humanoid.JumpPower = t
 end)
 
-g:Toggle("Headless",false, function(bool)
+x:Toggle("Headless",false, function(bool)
         game.Players.LocalPlayer.Character.Head.Transparency = 1
 game.Players.LocalPlayer.Character.Head.Transparency = 1
 for i,v in pairs(game.Players.LocalPlayer.Character.Head:GetChildren()) do
@@ -301,9 +366,9 @@ v.Transparency = 1
 end
 end
 end)
-g:Seperator()
+x:Seperator()
 
-g:Toggle("Korblox",false, function(bool)
+x:Toggle("Korblox",false, function(bool)
 local ply = game.Players.LocalPlayer
 local chr = ply.Character
 chr.RightLowerLeg.MeshId = "902942093"
@@ -314,44 +379,44 @@ chr.RightFoot.MeshId = "902942089"
 chr.RightFoot.Transparency = "1"
 end)
 
-g:Seperator() 
+x:Seperator() 
 
 
-local h = Tab2:Channel("Commands") -- Channel 0_0
+local y = Tab2:Channel("Commands") -- Channel 0_0
 
-h:Toggle("Bypassed fly",false, function(bool)
+y:Toggle("Bypassed fly",false, function(bool)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
 
 Fly(true) -- Change "true" To "false" to disable Fly
 end)
 
-h:Seperator() 
+y:Seperator() 
 
-h:Button("Anti Afk", function()
+y:Button("Anti Afk", function()
 game:service'Players'.LocalPlayer.Idled:connect(function()
-bb:CaptureController()bb:ClickButton2(Vector2.new())
+y:CaptureController()bb:ClickButton2(Vector2.new())
 ab.Text="Roblox Tried to kick you but kyo didnt let them kick you :D"wait(2)ab.Text="Status : Active"end)
 end)
-h:Seperator()
+y:Seperator()
 
-h:Button("Godmode", function()
+y:Button("Godmode", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/FwfNEqYz", true))()
 end)
-h:Seperator()
-h:Button("Godmode v2", function()
+y:Seperator()
+y:Button("Godmode v2", function()
 end)
-h:Seperator()
+y:Seperator()
 
-h:Button("Noclip", function()
+y:Button("Noclip", function()
     pcall(loadstring(game:HttpGet("https://pastebin.com/raw/kt3Nxzw1")))
 end)
-h:Seperator()
-h:Button("Chat Bypasser", function()
+y:Seperator()
+y:Button("Chat Bypasser", function()
     loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
 end)
-h:Seperator()
+y:Seperator()
 
-h:Button("Inf Jumps", function()
+y:Button("Inf Jumps", function()
     local InfiniteJumpEnabled = true
 game:GetService("UserInputService").JumpRequest:connect(function()
 	if InfiniteJumpEnabled then
@@ -359,17 +424,17 @@ game:GetService("UserInputService").JumpRequest:connect(function()
 	end
 end)
 end)
-h:Seperator()
-h:Button("TP Tool", function()
+y:Seperator()
+y:Button("TP Tool", function()
 pcall(loadstring(game:HttpGet("https://pastebin.com/raw/njMw0Bke")))
 end)
-h:Seperator()
-h:Toggle("ESP",false, function(bool)
+y:Seperator()
+y:Toggle("ESP",false, function(bool)
 loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/WRD ESP.txt"))()
 end)
 
 
-h:Seperator()
+y:Seperator()
 
 local Tab3 = Win1:Server("Credits", "") -- Server/Tab
 
