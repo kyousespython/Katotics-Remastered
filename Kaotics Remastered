@@ -156,6 +156,24 @@ b:Seperator()
 b:Button("Oblivion", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptOblivion/Oblivion/main/loader.lua"))()
 end)
+
+b:Button("Specter [leaked by kyo#6490]", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/specter-LEAKED/main/leakd%20by%20kyo%236490'))()
+end)
+
+b:Button("Puppy [leaked by kyo]", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/Puppy/main/leaked'))()
+end)
+
+b:Button("Private Aimlock", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/d06h8tmD'))()
+end)
+
+b:Button("Moon God v1", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/xQSQpDCJ'))()
+end)
+
+
 b:Seperator()
 
 local c = Tab1:Channel("Grand Piece Online") -- Channel 0_0
