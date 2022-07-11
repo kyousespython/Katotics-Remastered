@@ -37,12 +37,10 @@ function blacklist(player)
 end
 blacklist(player)
     
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Kaotic Loader";
-    Text = "Checking Whitelist...";
-    Duration = 3;
-})
-wait(2)
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro2/main/ui2"))()
+local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
+NotifyLib.prompt('Kaotics Loader [Remastered]', 'Checking Whitelist..', 5)
+wait(1)
 
 local p = Instance.new("IntValue")
 p.Parent = workspace
@@ -54,12 +52,10 @@ local plr = game.Players.LocalPlayer
 repeat wait() until plr.Character
 local gui = script.Parent
 
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Kaotic Loader";
-    Text = "Welcome, " .. game.Players.LocalPlayer.Name .. " to Kyos Loader";
-    Duration = 1;
-})
-wait(1)
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro2/main/ui2"))()
+local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
+NotifyLib.prompt('Kaotics Loader [Remastered]', 'Welcome '.. game.Players.LocalPlayer.Name .. ' to Kaotics Loader', 5)
+
 
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
@@ -353,11 +349,29 @@ local sldr = x:Slider("Walk Speed", 16, 500, 0, function(t) -- A Slider
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
 end)
 x:Seperator() 
+x:Toggle(
+    "Change to 250",
+    false,
+    function(bool)
+        sldr:Change(250)
+    end)
+
+
+
+x:Seperator() 
 local sldr = x:Slider("Jump Power", 50, 500, 0, function(t) -- A Slider
 game.Players.LocalPlayer.Character.Humanoid.JumpPower = t
 end)
 
-x:Toggle("Headless",false, function(bool)
+x:Toggle(
+    "Change to 250",
+    false,
+    function(bool)
+        sldr:Change(250)
+    end)
+
+x:Seperator() 
+x:Button("Headless FE", function()
         game.Players.LocalPlayer.Character.Head.Transparency = 1
 game.Players.LocalPlayer.Character.Head.Transparency = 1
 for i,v in pairs(game.Players.LocalPlayer.Character.Head:GetChildren()) do
@@ -368,7 +382,7 @@ end
 end)
 x:Seperator()
 
-x:Toggle("Korblox",false, function(bool)
+x:Button("Korblox FE", function()
 local ply = game.Players.LocalPlayer
 local chr = ply.Character
 chr.RightLowerLeg.MeshId = "902942093"
@@ -378,12 +392,20 @@ chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
 chr.RightFoot.MeshId = "902942089"
 chr.RightFoot.Transparency = "1"
 end)
+x:Seperator()
+x:Button("Amogus", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/clickingsounds/Caca/main/caca"))()
+end)
 
 x:Seperator() 
 
 
 local y = Tab2:Channel("Commands") -- Channel 0_0
 
+y:Toggle("ESP",false, function(bool)
+loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/WRD ESP.txt"))()
+end)
+y:Seperator() 
 y:Toggle("Bypassed fly",false, function(bool)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
 
@@ -428,10 +450,6 @@ y:Seperator()
 y:Button("TP Tool", function()
 pcall(loadstring(game:HttpGet("https://pastebin.com/raw/njMw0Bke")))
 end)
-y:Seperator()
-y:Toggle("ESP",false, function(bool)
-loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/WRD ESP.txt"))()
-end)
 
 
 y:Seperator()
@@ -444,8 +462,11 @@ z:Label("Developer : kyo#2222, kyo#6490.") -- A Label (Ofc)
 z:Seperator()
 z:Label("Script is getting worked on..")
 z:Seperator()
-z:Button("Copy Discord Invite")
-setclipboard("https://discord.gg/5UaHjhVMcm")
-z:Seperator()
 z:Label("Please contact the Developer if any Issues took place!!")
+z:Seperator()
 z:Label("ERIN SUCKS ASS , BAD IN DH LIKE IM BETTER SHES MY SEED , SONNY.")
+z:Seperator()
+z:Button("Copy Discord Invite", function()
+setclipboard("https://discord.gg/5UaHjhVMcm")
+DiscordLib:Notification("Notification", "Copied Discord Invite", "OK")
+end)
