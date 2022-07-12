@@ -199,7 +199,7 @@ c:Button("Gpo GUI", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/Jakekill871/public-scripts/master/GrandPieceOnlineGUI'),true))()
 end)
 c:Seperator()
-c:Button("CFA Hub (BEST)", function()
+c:Button("CFA Hub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CFA-HUB/CFA-HUB/main/cfahubfree.lua"))()
 end)
 c:Seperator()
@@ -300,7 +300,8 @@ f:Button("VG", function()
 end)
 f:Seperator()
 f:Button("Ghost", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/ghost-home/public/main/AnimeGhost.lua', true))()
+    getgenv().key = "RBKT6WZa" -- put your key here, key is free and can be found here on each update or whatever
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ghost-home/public/main/grandpiece.lua', true))()
 end)
 
 f:Seperator()
@@ -398,6 +399,22 @@ j:Button("Saza Hub", function()
     _G.Color = Color3.fromRGB(255, 255, 255)
     loadstring(game:HttpGet"https://rawscripts.net/raw/SAZA-HUB_496")()
 end)
+
+local k = Tab1:Channel("Anime adventures")
+
+k:Button("Kaotics Hub", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/ndKDu5D3'))()
+end)
+
+k:Button("Arpon AG", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua"))()
+    codes = {"TWOMILLION","subtomaokuma","CHALLENGEFIX","GINYUFIX","RELEASE","SubToKelvingts","SubToBlamspot","KingLuffy","TOADBOIGAMING";"noclypso","FictioNTheFirst"}
+for _, v in pairs(codes) do
+pcall(function() game:GetService("ReplicatedStorage").endpoints["client_to_server"]["redeem_code"]:InvokeServer(v)()    end)
+end
+end)
+
+
 
 local Tab2 = Win1:Server("Player Settings", "") -- Server/Tab
 
