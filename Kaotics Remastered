@@ -61,13 +61,17 @@ local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/daw
 
 local Win1 = DiscordLib:Window("Kaotics Loader [Remastered]") -- Title/Name
 
-local Tab1 = Win1:Server("Scripts", "") -- Server/Tab
+local Tab1 = Win1:Server("Scripts", "http://www.roblox.com/asset/?id=6031075938") -- Server/Tab
 
 local a = Tab1:Channel("Dahood") -- Channel 0_0
 
 
 a:Button("Swagmode", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+end)
+a:Seperator()
+a:Button("Winter Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nosssa/NossLock/main/WinterTime"))()
 end)
 
 a:Seperator()
@@ -138,6 +142,15 @@ a:Seperator()
 
 local b = Tab1:Channel("Hood Modded") -- Channel 0_0
 
+b:Button("Pink Dot Lock", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/DLTFuz8E'))()
+end)
+b:Seperator()
+b:Button("Winter Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nosssa/NossLock/main/WinterTime"))()
+end)
+
+b:Seperator()
 b:Button("Chariot Ware", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Rippeed/kidsinmybasement/main/betacw"))()
 end)
@@ -198,10 +211,18 @@ c:Button("Ghost Piece", function()
 getgenv().key = "KEY" -- put your key here, key is free and can be found here on each update or whatever
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ghost-home/public/main/grandpiece.lua', true))()
 end)
-
+c:Seperator()
+c:Button("Gpo Hub (Leaked)", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/zEnA29Hj'))()
+end)
 
 local d = Tab1:Channel("Blox Fruits")
 
+
+d:Button("Mukuro Hub [Remake]", function()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/NEWBF")()
+end)
+d:Seperator()
 d:Button("Reskin Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/sasaff94/Reskin-Hub/main/README.md"))()
 end)
@@ -340,6 +361,32 @@ w:Button("Fates", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
 end)
 
+local h = Tab1:Channel("ASTD")
+
+h:Button("River Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Xyrkey/chicken-hub/main/king-legacy"))()
+end)
+h:Seperator()
+h:Button("Karma Panda", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xyrkey/chicken-hub/main/king-legacy"))()
+end)
+
+
+local i = Tab1:Channel("Hood Customs")
+
+i:Button("Winter Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nosssa/NossLock/main/WinterTime"))()
+end)
+
+i:Seperator()
+i:Button("Kaotic Lock", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/LA7XBw8m'))()
+end)
+i:Seperator()
+i:Button("Camlock by [Kyo]", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/wmb1xcU6'))()
+end)
+
 local Tab2 = Win1:Server("Player Settings", "") -- Server/Tab
 
 local x = Tab2:Channel("Player") -- Channel 0_0
@@ -456,15 +503,15 @@ y:Seperator()
 
 local Tab3 = Win1:Server("Credits", "") -- Server/Tab
 
-local z = Tab3:Channel("Kaotics Loader") -- Channel 0_0
+local z = Tab3:Channel("Changelog") -- Channel 0_0
 
-z:Label("Developer : kyo#2222, kyo#6490.") -- A Label (Ofc)
+z:Label("Version : 0.2")
 z:Seperator()
-z:Label("Script is getting worked on..")
+z:Label("Developer : kyo#2222, kyo#6490.") -- A Label (Ofc)
 z:Seperator()
 z:Label("Please contact the Developer if any Issues took place!!")
 z:Seperator()
-z:Label("ERIN SUCKS ASS , BAD IN DH LIKE IM BETTER SHES MY SEED , SONNY.")
+z:Label("erin sux.")
 z:Seperator()
 z:Button("Copy Discord Invite", function()
 setclipboard("https://discord.gg/5UaHjhVMcm")
