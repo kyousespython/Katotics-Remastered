@@ -517,7 +517,7 @@ local Tab3 = Win1:Server("Credits", "") -- Server/Tab
 
 local z = Tab3:Channel("Changelog") -- Channel 0_0
 
-z:Label("Version : 1.7")
+z:Label("Version : 0.2")
 z:Seperator()
 z:Label("Developer : kyo#2222, kyo#6490.") -- A Label (Ofc)
 z:Seperator()
