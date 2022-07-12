@@ -406,14 +406,8 @@ k:Button("Kaotics Hub", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/ndKDu5D3'))()
 end)
 
-k:Seperator()
-
 k:Button("Arpon AG", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua"))()
-    codes = {"TWOMILLION","subtomaokuma","CHALLENGEFIX","GINYUFIX","RELEASE","SubToKelvingts","SubToBlamspot","KingLuffy","TOADBOIGAMING";"noclypso","FictioNTheFirst"}
-for _, v in pairs(codes) do
-pcall(function() game:GetService("ReplicatedStorage").endpoints["client_to_server"]["redeem_code"]:InvokeServer(v)()    end)
-end
 end)
 
 
