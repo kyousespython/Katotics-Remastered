@@ -387,6 +387,18 @@ i:Button("Camlock by [Kyo]", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/wmb1xcU6'))()
 end)
 
+
+local j = Tab1:Channel("Pet Simulator X")
+
+j:Button("LKHUB", function()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/pet_sim_x_lk.lua")()
+end)
+
+j:Button("Saza Hub", function()
+    _G.Color = Color3.fromRGB(255, 255, 255)
+    loadstring(game:HttpGet"https://rawscripts.net/raw/SAZA-HUB_496")()
+end)
+
 local Tab2 = Win1:Server("Player Settings", "") -- Server/Tab
 
 local x = Tab2:Channel("Player") -- Channel 0_0
