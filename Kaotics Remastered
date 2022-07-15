@@ -7,7 +7,7 @@ local bad = "You're Blacklisted"
 _G.whitelisted = {
     [1117039101] = "lronman662", 
     [561230558] = "Username",
-    [111] = "Username"
+    [2750746918] = "Username"
 }
 
 
@@ -65,6 +65,10 @@ local Tab1 = Win1:Server("Scripts", "http://www.roblox.com/asset/?id=6031075938"
 
 local a = Tab1:Channel("Dahood") -- Channel 0_0
 
+
+a:Button("KaosHub", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/KaosHub/main/kyoontop'))()
+end)
 
 a:Button("Swagmode", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
@@ -401,6 +405,11 @@ j:Button("Saza Hub", function()
 end)
 
 local k = Tab1:Channel("Anime adventures")
+
+
+k:Button("KaosHub", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/kyousespython/KaosHub/main/kyoontop'))()
+end)
 
 k:Button("Kaotics Hub", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/ndKDu5D3'))()
